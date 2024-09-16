@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a2e;
+    color: #fff;
+}
+
+.promo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a2e;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.promo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.promo-slider {
+    position: relative;
+    width: 50%;
+    height: 300px; /* Atur sesuai kebutuhan */
+    overflow: clip;
+}
+
+.promo-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.promo-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX( 5%); }
+    100% { transform: translateX(0); }
+}
+
+.promo-slider {
+    animation: slide 8s infinite;
+}
+
+.promo-content {
+    padding: 20px;
+    max-width: 50%;
+}
+
+.promo-content h2 {
+    font-size: 2rem;
+    margin: 0 0 10px 0;
+    color: #ffe600;
+}
+
+.promo-content p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff6347;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e5533d;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    text-align: center;
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+.topup {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.topup h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category {
+    background-color: #2e2e4f;
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.category:hover {
+    transform: translateY(-10px);
+}
+
+.category h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.options a {
+    display: block;
+    text-decoration: none;
+    background-color: #ffcc00;
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.options a:hover {
+    background-color: #ffaa00;
+}
+
+footer {
+    background-color: #0f0c29;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    color: #ccc;
+    font-size: 1em;
+}
+
+.tentang {
+    background-color: #2e2e4f; /* Warna latar belakang yang lembut */
+    padding: 50px 0; /* Memberi ruang vertikal antara elemen */
+    text-align: center; /* Agar teks berada di tengah */
+}
+
+.card {
+    background-color: #484857; /* Warna putih untuk kartu */
+    padding: 30px;
+    border-radius: 10px; /* Membuat sudut kartu melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan agar tampak mengambang */
+    max-width: 600px;
+    margin: 0 auto; /* Agar kartu berada di tengah halaman */
+}
+
+.card h1 {
+    font-size: 2.5rem; /* Ukuran huruf untuk judul lebih besar */
+    color: #fdf8f8; /* Warna teks lebih gelap */
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 1.2rem; /* Ukuran huruf untuk paragraf */
+    line-height: 1.6; /* Spasi antar baris teks */
+    color: #fcf9f9; /* Warna teks yang lebih soft */
+}
+
+.card a.title {
+    color: #ff6347; /* Warna untuk nama toko */
+    text-decoration: none; /* Hilangkan garis bawah pada link */
+    font-weight: bold; /* Huruf tebal untuk link */
+}
+
+.card a.title:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}
