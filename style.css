@@ -251,7 +251,7 @@ link a:hover
 {
     background-color: var(--green);
     padding: 5%;
-    border-radius: 100px;
+    border-radius: 10px;
 }
 
 .pesan:hover
