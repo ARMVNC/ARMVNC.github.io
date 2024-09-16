@@ -64,7 +64,7 @@ header
     padding: 2px;
     background-color: var(--green);
     color: var(--blue);
-    width: 2%;
+    width: 50px;
     font-weight: bold;
 }
 
@@ -372,6 +372,6 @@ footer
 
     .sosmed img
     {
-        width: 10%;
+        width: 50px;
     }
 }
